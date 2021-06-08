@@ -10,7 +10,9 @@ module.exports = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
+    hideableSidebar: true,
     navbar: {
+      hideOnScroll: true,
       title: 'My Site',
       logo: {
         alt: 'My Site Logo',
@@ -100,6 +102,14 @@ module.exports = {
     ],
   ],
   plugins: [
-    require.resolve('@cmfcmf/docusaurus-search-local')
+    [require.resolve('@cmfcmf/docusaurus-search-local'), {
+      indexDocs: true,
+      docsRouteBasePath: '/docs',
+      indexDocsSidebarParentCategories: 2,
+      indexBlog: true,
+      blogRouteBasePath: '/blog',
+      indexPages: false,
+      language: "en"
+    }]
   ],
 };
