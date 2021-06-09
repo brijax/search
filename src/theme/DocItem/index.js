@@ -107,7 +107,7 @@ function DocItem(props) {
             shortname='my-site-fjtb6xdpgj'
             config= {
               {
-              url: 'search-two.vercel.app',
+              url: 'search-two.vercel.app/docs/intro',
               indetifier: 'example',
               title: title,
             }
