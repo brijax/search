@@ -109,7 +109,8 @@ module.exports = {
       indexBlog: true,
       blogRouteBasePath: '/blog',
       indexPages: false,
-      language: "en"
+      language: "en",
+      style: "none"
     }]
   ],
 };
